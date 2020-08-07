@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Biglietto Treno</title>
+  </head>
+  <body>
+  <!-- page-wrapper -->
+  <div class="wrapper">
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <!-- container-top -->
+    <div class="container-top">
+      <div class="row">
+        <div class="col">
+          <label for="nome">Nome Cognome</label>
+          <input id="nome" type="text" name="nome" placeholder="Nome Cognome">
+        </div>
+        <div class="col">
+          <label for="distanza">Km da percorrere</label>
+          <input id="distanza" type="number" min="0" name="distanza" placeholder="Km">
+        </div>
+        <div class="col">
+          <label for="">Fascia d'età</label>
+          <select class="" name="">
+            <option value="minorenne">Minorenne</option>
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="over65">Over 65</option>
+          </select>
+        </div>
+      </div>
+      <div class="bottoni">
+        <button id="genera" type="button" name="button">Genera</button>
+        <button id="annulla" type="button" name="button">Annulla</button>
+      </div>
+    </div>
+    <!-- /container-top -->
+    <h2>IL TUO BIGLIETTO</h2>
+    <div class="container-bottom">
+      <h3>DETTAGLIO PASSEGGERI</h3>
+      <div class="container-bottom-row">
+        <div class="box-grey">
+          <h3>NOME PASSEGGERO</h3>
+          <div id="nome-utente" class=""></div>
+        </div>
+        <div class="tabella">
+          <table>
+            <tr>
+              <th>Offerta</th>
+              <th>Carrozza</th>
+              <th>Codice CP</th>
+              <th>Costo biglietto</th>
+            </tr>
+            <tr>
+              <td id="offerta"></td>
+              <td id="carrozza"></td>
+              <td id="codiceCp"></td>
+              <td id="costo"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /page-wrapper -->
+
+  <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
