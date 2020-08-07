@@ -1,12 +1,10 @@
 // prendere dai campi input i valori e stamparli nel biglietto
-
-
-
 //attraverso il bottone genera facciamo apparire il biglietto con i campi compilati correttamente
 var genera = document.getElementById('genera');
 genera.addEventListener("click",
   function(){
-    
+    var container = document.getElementById('container');
+    container.classList.add("visible");
 
     var nome = document.getElementById('nome').value;
     var distanza = document.getElementById('distanza').value;
@@ -21,7 +19,7 @@ genera.addEventListener("click",
     var prezzoOver = prezzo - scontoOver;
 
     var messaggioMaggiorenni = "Tariffa standard";
-    var messaggioMinorenni = "Tariffa ridotta";
+    var messaggioMinorenni = "Sconto minorenne";
     var messaggioOver = "Sconto Silver";
 
 
@@ -43,4 +41,19 @@ genera.addEventListener("click",
 
   }
 );
+
+
 //attraverso il bottone annulla facciamo sparire il biglietto e resettiamo i campi input
+
+var annulla = document.getElementById("annulla");
+annulla.addEventListener("click",
+function(){
+  var container = document.getElementById('container');
+  container.classList.remove("visible");
+
+  document.getElementById('nome').value = "";
+  document.getElementById('distanza').value = "";
+  document.getElementById('fascia').value = "";
+
+}
+);

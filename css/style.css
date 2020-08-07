@@ -64,6 +64,7 @@ input::placeholder{
 input:focus, select:focus{
   background-color: #B91450;
   color: white;
+  border-color: black;
 }
 
 .bottoni{
@@ -86,6 +87,7 @@ input:focus, select:focus{
   width: 100%;
   padding: 20px;
   background-color: white;
+  display: none;
 }
 .container-bottom-row{
   border-top: 1px solid grey;
@@ -99,6 +101,13 @@ input:focus, select:focus{
   padding: 10px;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
+}
+
+th{
+  padding: 20px;
+}
+td{
+  padding: 0 80px;
 }
 
 .visible{
